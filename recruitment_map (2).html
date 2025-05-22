@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_18f42167b6a8ffe675048742cc3cbba7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_18f42167b6a8ffe675048742cc3cbba7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_18f42167b6a8ffe675048742cc3cbba7 = L.map(
+                "map_18f42167b6a8ffe675048742cc3cbba7",
+                {
+                    center: [23.7, 121.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b15208da86f67dff6fb7017c28dec1b1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b15208da86f67dff6fb7017c28dec1b1.addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+            var circle_marker_ac8d515b63c3c707573fe57fad28a91c = L.circleMarker(
+                [23.9681, 120.967],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_c009647d076472ca7b49915f62aee806 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bf4aee384c1e1c7d124ae511fedfd2b3 = $(`<div id="html_bf4aee384c1e1c7d124ae511fedfd2b3" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>社工員</div>                 <div style="font-size:12px; color:#34495e;">地點：埔里</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：3 名</div>             </div>             </div>`)[0];
+                popup_c009647d076472ca7b49915f62aee806.setContent(html_bf4aee384c1e1c7d124ae511fedfd2b3);
+            
+        
+
+        circle_marker_ac8d515b63c3c707573fe57fad28a91c.bindPopup(popup_c009647d076472ca7b49915f62aee806)
+        ;
+
+        
+    
+    
+            var circle_marker_e0153d323e80295da030be684c078429 = L.circleMarker(
+                [25.1272, 121.7395],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_a547ce26147c22917d7ea51c2943fdf0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_da5e75ef10dbd7049f9070c06116d1d6 = $(`<div id="html_da5e75ef10dbd7049f9070c06116d1d6" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>社工員</div>                 <div style="font-size:12px; color:#34495e;">地點：基隆</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_a547ce26147c22917d7ea51c2943fdf0.setContent(html_da5e75ef10dbd7049f9070c06116d1d6);
+            
+        
+
+        circle_marker_e0153d323e80295da030be684c078429.bindPopup(popup_a547ce26147c22917d7ea51c2943fdf0)
+        ;
+
+        
+    
+    
+            var circle_marker_7d5d46918fe44ebbbac1f54b3076b5a6 = L.circleMarker(
+                [24.7405, 121.087],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_6f11816bd95eb92f9f92c4b0ad015d14 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1e46c8bc39390dbb78080915a2b03b94 = $(`<div id="html_1e46c8bc39390dbb78080915a2b03b94" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>社工員</div>                 <div style="font-size:12px; color:#34495e;">地點：竹東</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_6f11816bd95eb92f9f92c4b0ad015d14.setContent(html_1e46c8bc39390dbb78080915a2b03b94);
+            
+        
+
+        circle_marker_7d5d46918fe44ebbbac1f54b3076b5a6.bindPopup(popup_6f11816bd95eb92f9f92c4b0ad015d14)
+        ;
+
+        
+    
+    
+            var circle_marker_29ed9efd9cff8ad32f58678694bd21bc = L.circleMarker(
+                [23.5803, 120.9447],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_89e4e403e1a9bf1ca6d80f2f1e630e80 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6c4b246f56c9150d178d410e3fe0eb2f = $(`<div id="html_6c4b246f56c9150d178d410e3fe0eb2f" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>社工員</div>                 <div style="font-size:12px; color:#34495e;">地點：信義濁水</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_89e4e403e1a9bf1ca6d80f2f1e630e80.setContent(html_6c4b246f56c9150d178d410e3fe0eb2f);
+            
+        
+
+        circle_marker_29ed9efd9cff8ad32f58678694bd21bc.bindPopup(popup_89e4e403e1a9bf1ca6d80f2f1e630e80)
+        ;
+
+        
+    
+    
+            var circle_marker_6b75f7f0395a7b7c96dc1f89eb2d31ff = L.circleMarker(
+                [23.9802, 120.8491],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_d66f57c31aebfa670f985833e29f02c6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d88b304a742f3b0c4694929ff0817c3b = $(`<div id="html_d88b304a742f3b0c4694929ff0817c3b" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>社工員</div>                 <div style="font-size:12px; color:#34495e;">地點：國姓</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_d66f57c31aebfa670f985833e29f02c6.setContent(html_d88b304a742f3b0c4694929ff0817c3b);
+            
+        
+
+        circle_marker_6b75f7f0395a7b7c96dc1f89eb2d31ff.bindPopup(popup_d66f57c31aebfa670f985833e29f02c6)
+        ;
+
+        
+    
+    
+            var circle_marker_088d2382a2ac0c1641bf4a80e73433b1 = L.circleMarker(
+                [24.0683, 120.5385],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_fc821697b68997ab98230931ceb33a1e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7aaa12c7089ab40cf08024f7b3d7d027 = $(`<div id="html_7aaa12c7089ab40cf08024f7b3d7d027" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>社工員</div>                 <div style="font-size:12px; color:#34495e;">地點：彰化</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_fc821697b68997ab98230931ceb33a1e.setContent(html_7aaa12c7089ab40cf08024f7b3d7d027);
+            
+        
+
+        circle_marker_088d2382a2ac0c1641bf4a80e73433b1.bindPopup(popup_fc821697b68997ab98230931ceb33a1e)
+        ;
+
+        
+    
+    
+            var circle_marker_5aa5e783e8154fcd38b89425309a10b7 = L.circleMarker(
+                [22.6661, 120.482],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_d241475edf64a6ef20a9a0c0a0350baa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0c99d16a27730b6198d2aa58a1506660 = $(`<div id="html_0c99d16a27730b6198d2aa58a1506660" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>社工員</div>                 <div style="font-size:12px; color:#34495e;">地點：屏東</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_d241475edf64a6ef20a9a0c0a0350baa.setContent(html_0c99d16a27730b6198d2aa58a1506660);
+            
+        
+
+        circle_marker_5aa5e783e8154fcd38b89425309a10b7.bindPopup(popup_d241475edf64a6ef20a9a0c0a0350baa)
+        ;
+
+        
+    
+    
+            var circle_marker_a26fd7c91099aa3230a8456e35181e92 = L.circleMarker(
+                [23.5667, 119.562],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_f6a5e3ec9d1531100855f58d2f695377 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3dc234e8f34059e8d229904965eaeaf2 = $(`<div id="html_3dc234e8f34059e8d229904965eaeaf2" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>社工員</div>                 <div style="font-size:12px; color:#34495e;">地點：澎湖</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_f6a5e3ec9d1531100855f58d2f695377.setContent(html_3dc234e8f34059e8d229904965eaeaf2);
+            
+        
+
+        circle_marker_a26fd7c91099aa3230a8456e35181e92.bindPopup(popup_f6a5e3ec9d1531100855f58d2f695377)
+        ;
+
+        
+    
+    
+            var circle_marker_35931f9e6d83d80200aab175cca54ce0 = L.circleMarker(
+                [23.9681, 120.967],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_30cd3be813ecc620bd2a14dd75db9a4e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a8134d685d77ce7aa3cc9b35a6b5759c = $(`<div id="html_a8134d685d77ce7aa3cc9b35a6b5759c" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>學習輔導員</div>                 <div style="font-size:12px; color:#34495e;">地點：埔里</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_30cd3be813ecc620bd2a14dd75db9a4e.setContent(html_a8134d685d77ce7aa3cc9b35a6b5759c);
+            
+        
+
+        circle_marker_35931f9e6d83d80200aab175cca54ce0.bindPopup(popup_30cd3be813ecc620bd2a14dd75db9a4e)
+        ;
+
+        
+    
+    
+            var circle_marker_f647860f7da09709e0b012ae3c51b4d3 = L.circleMarker(
+                [24.7405, 121.087],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_865404055590ad2a594abe4e24dfcdc5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_74fe707da1bdaa70a5fd7860fc28493d = $(`<div id="html_74fe707da1bdaa70a5fd7860fc28493d" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>學習輔導員</div>                 <div style="font-size:12px; color:#34495e;">地點：竹東</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_865404055590ad2a594abe4e24dfcdc5.setContent(html_74fe707da1bdaa70a5fd7860fc28493d);
+            
+        
+
+        circle_marker_f647860f7da09709e0b012ae3c51b4d3.bindPopup(popup_865404055590ad2a594abe4e24dfcdc5)
+        ;
+
+        
+    
+    
+            var circle_marker_bfbf3baecd927a1bc57846bed8f676c8 = L.circleMarker(
+                [23.5803, 120.9447],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_236b13440ad5b7cda52b4749e7ab5ace = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d86fc139b584987a1e1c435781d06e58 = $(`<div id="html_d86fc139b584987a1e1c435781d06e58" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>學習輔導員</div>                 <div style="font-size:12px; color:#34495e;">地點：信義濁水</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_236b13440ad5b7cda52b4749e7ab5ace.setContent(html_d86fc139b584987a1e1c435781d06e58);
+            
+        
+
+        circle_marker_bfbf3baecd927a1bc57846bed8f676c8.bindPopup(popup_236b13440ad5b7cda52b4749e7ab5ace)
+        ;
+
+        
+    
+    
+            var circle_marker_1017c7d905b3817c2c09660e21d2285c = L.circleMarker(
+                [23.4588, 120.4468],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_f2ad952b2a52fe3c17ae12be62c055f7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4e02aa7b26404aeb493e1a03bb8f32d0 = $(`<div id="html_4e02aa7b26404aeb493e1a03bb8f32d0" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>學習輔導員</div>                 <div style="font-size:12px; color:#34495e;">地點：嘉義</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_f2ad952b2a52fe3c17ae12be62c055f7.setContent(html_4e02aa7b26404aeb493e1a03bb8f32d0);
+            
+        
+
+        circle_marker_1017c7d905b3817c2c09660e21d2285c.bindPopup(popup_f2ad952b2a52fe3c17ae12be62c055f7)
+        ;
+
+        
+    
+    
+            var circle_marker_c23daff79fa972d1923fe3562faedc36 = L.circleMarker(
+                [22.6661, 120.482],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_1b0a84a8b379cbc4dd7c9c99abe56e58 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7a2eba758842f3d82de9d7264ab98dd6 = $(`<div id="html_7a2eba758842f3d82de9d7264ab98dd6" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>學習輔導員</div>                 <div style="font-size:12px; color:#34495e;">地點：屏東</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_1b0a84a8b379cbc4dd7c9c99abe56e58.setContent(html_7a2eba758842f3d82de9d7264ab98dd6);
+            
+        
+
+        circle_marker_c23daff79fa972d1923fe3562faedc36.bindPopup(popup_1b0a84a8b379cbc4dd7c9c99abe56e58)
+        ;
+
+        
+    
+    
+            var circle_marker_d08da15e44050ce1edac03256b3ced34 = L.circleMarker(
+                [23.9761, 121.6044],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_2fbc084269e2ed4e4cd6e52672a909f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dc7ef546c89da4cfe6e08f1a0b67c141 = $(`<div id="html_dc7ef546c89da4cfe6e08f1a0b67c141" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>學習輔導員</div>                 <div style="font-size:12px; color:#34495e;">地點：花蓮</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_2fbc084269e2ed4e4cd6e52672a909f1.setContent(html_dc7ef546c89da4cfe6e08f1a0b67c141);
+            
+        
+
+        circle_marker_d08da15e44050ce1edac03256b3ced34.bindPopup(popup_2fbc084269e2ed4e4cd6e52672a909f1)
+        ;
+
+        
+    
+    
+            var circle_marker_bf4c021e10eb7fa636a2216e9901ab1c = L.circleMarker(
+                [24.7405, 121.087],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_75939fd99d4d8352cd08a773d6c07b6d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ef63168870b89e9adb5a79efd5b880e6 = $(`<div id="html_ef63168870b89e9adb5a79efd5b880e6" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>數學專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：竹東</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_75939fd99d4d8352cd08a773d6c07b6d.setContent(html_ef63168870b89e9adb5a79efd5b880e6);
+            
+        
+
+        circle_marker_bf4c021e10eb7fa636a2216e9901ab1c.bindPopup(popup_75939fd99d4d8352cd08a773d6c07b6d)
+        ;
+
+        
+    
+    
+            var circle_marker_8b19c34d3c61a3efaa77ed7e7cd66169 = L.circleMarker(
+                [24.6688, 121.2096],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_0353b0a1cb9ad4056cb205115852d5a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4121c73700640936d7c2b91a3727cca = $(`<div id="html_e4121c73700640936d7c2b91a3727cca" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>數學專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：尖前</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_0353b0a1cb9ad4056cb205115852d5a2.setContent(html_e4121c73700640936d7c2b91a3727cca);
+            
+        
+
+        circle_marker_8b19c34d3c61a3efaa77ed7e7cd66169.bindPopup(popup_0353b0a1cb9ad4056cb205115852d5a2)
+        ;
+
+        
+    
+    
+            var circle_marker_865938720d8d139bcc5cb976d1434db9 = L.circleMarker(
+                [23.7085, 121.0049],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_ad8deef5608ab9931375a66b998806a9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e0f7ef0d571d68fed08e6026144aabb1 = $(`<div id="html_e0f7ef0d571d68fed08e6026144aabb1" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>數學專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：信義陳有蘭</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_ad8deef5608ab9931375a66b998806a9.setContent(html_e0f7ef0d571d68fed08e6026144aabb1);
+            
+        
+
+        circle_marker_865938720d8d139bcc5cb976d1434db9.bindPopup(popup_ad8deef5608ab9931375a66b998806a9)
+        ;
+
+        
+    
+    
+            var circle_marker_3e5c4354795c4275302fa7057fbaf2fe = L.circleMarker(
+                [24.0683, 120.5385],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_90ad4bcbcc98739c5f0874f5a696faea = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2ce1986569a6680c90abaa343435b165 = $(`<div id="html_2ce1986569a6680c90abaa343435b165" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>數學專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：彰化</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_90ad4bcbcc98739c5f0874f5a696faea.setContent(html_2ce1986569a6680c90abaa343435b165);
+            
+        
+
+        circle_marker_3e5c4354795c4275302fa7057fbaf2fe.bindPopup(popup_90ad4bcbcc98739c5f0874f5a696faea)
+        ;
+
+        
+    
+    
+            var circle_marker_a14c01b0114ccbf019371c2cd58658ce = L.circleMarker(
+                [23.9802, 120.8491],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_e876cd6187687ebc78adb39bb6aa1711 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c69837fae4742e6a6fcecd17996e2857 = $(`<div id="html_c69837fae4742e6a6fcecd17996e2857" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>數學專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：國姓</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_e876cd6187687ebc78adb39bb6aa1711.setContent(html_c69837fae4742e6a6fcecd17996e2857);
+            
+        
+
+        circle_marker_a14c01b0114ccbf019371c2cd58658ce.bindPopup(popup_e876cd6187687ebc78adb39bb6aa1711)
+        ;
+
+        
+    
+    
+            var circle_marker_26377f1c975364d50deabe163b4471ac = L.circleMarker(
+                [22.6661, 120.482],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_a669a58c96786c4311fb04f64e7e835b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_11af8b153598b0c347c31d91f8712f84 = $(`<div id="html_11af8b153598b0c347c31d91f8712f84" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>數學專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：屏東</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_a669a58c96786c4311fb04f64e7e835b.setContent(html_11af8b153598b0c347c31d91f8712f84);
+            
+        
+
+        circle_marker_26377f1c975364d50deabe163b4471ac.bindPopup(popup_a669a58c96786c4311fb04f64e7e835b)
+        ;
+
+        
+    
+    
+            var circle_marker_8df1bc69f55ea7af7c40540f827b979a = L.circleMarker(
+                [25.1272, 121.7395],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_f6b490e7a26b727864bf3c44cc7c969d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2331925a6dee75db097dfb2ae1bbedf3 = $(`<div id="html_2331925a6dee75db097dfb2ae1bbedf3" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>數學專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：基隆</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_f6b490e7a26b727864bf3c44cc7c969d.setContent(html_2331925a6dee75db097dfb2ae1bbedf3);
+            
+        
+
+        circle_marker_8df1bc69f55ea7af7c40540f827b979a.bindPopup(popup_f6b490e7a26b727864bf3c44cc7c969d)
+        ;
+
+        
+    
+    
+            var circle_marker_80a5c5bb767dcafc708180f2d822cd40 = L.circleMarker(
+                [24.7405, 121.087],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_29e0e9fd2c9ca63ed64d5e7d9d06f097 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b67bc347bca4765569791c5300a645f0 = $(`<div id="html_b67bc347bca4765569791c5300a645f0" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>英文專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：竹東</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_29e0e9fd2c9ca63ed64d5e7d9d06f097.setContent(html_b67bc347bca4765569791c5300a645f0);
+            
+        
+
+        circle_marker_80a5c5bb767dcafc708180f2d822cd40.bindPopup(popup_29e0e9fd2c9ca63ed64d5e7d9d06f097)
+        ;
+
+        
+    
+    
+            var circle_marker_7e0875d41582497cf7a9863b493394de = L.circleMarker(
+                [24.2534, 120.5536],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_e044723a1b32be64da43f1e1cb302956 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_72e5ef5fbdeac9769f58c166b2b53700 = $(`<div id="html_72e5ef5fbdeac9769f58c166b2b53700" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>英文專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：沙鹿</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_e044723a1b32be64da43f1e1cb302956.setContent(html_72e5ef5fbdeac9769f58c166b2b53700);
+            
+        
+
+        circle_marker_7e0875d41582497cf7a9863b493394de.bindPopup(popup_e044723a1b32be64da43f1e1cb302956)
+        ;
+
+        
+    
+    
+            var circle_marker_6608c0dc29cb373f30f2c583ff0c78ac = L.circleMarker(
+                [23.9802, 120.8491],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_6351fd49ff8e903708ef085bbd4d6c25 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_862606ba150e3ee963556da19d2d9c80 = $(`<div id="html_862606ba150e3ee963556da19d2d9c80" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>英文專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：國姓</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_6351fd49ff8e903708ef085bbd4d6c25.setContent(html_862606ba150e3ee963556da19d2d9c80);
+            
+        
+
+        circle_marker_6608c0dc29cb373f30f2c583ff0c78ac.bindPopup(popup_6351fd49ff8e903708ef085bbd4d6c25)
+        ;
+
+        
+    
+    
+            var circle_marker_3969675e89cf7b274a42359f2202cdb1 = L.circleMarker(
+                [23.5803, 120.9447],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_47f0bf470d648be0b8a32361753d6109 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0566765027c85f3a93c0b44572be2bf4 = $(`<div id="html_0566765027c85f3a93c0b44572be2bf4" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>英文專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：信義濁水</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_47f0bf470d648be0b8a32361753d6109.setContent(html_0566765027c85f3a93c0b44572be2bf4);
+            
+        
+
+        circle_marker_3969675e89cf7b274a42359f2202cdb1.bindPopup(popup_47f0bf470d648be0b8a32361753d6109)
+        ;
+
+        
+    
+    
+            var circle_marker_e7d01920c48e2ce6391391f9a6f7e146 = L.circleMarker(
+                [25.1272, 121.7395],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_cf7f9386f8cec1cd17b9070bf408f879 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dbef672689788122dcba5a71e86b9757 = $(`<div id="html_dbef672689788122dcba5a71e86b9757" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>英文專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：基隆</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_cf7f9386f8cec1cd17b9070bf408f879.setContent(html_dbef672689788122dcba5a71e86b9757);
+            
+        
+
+        circle_marker_e7d01920c48e2ce6391391f9a6f7e146.bindPopup(popup_cf7f9386f8cec1cd17b9070bf408f879)
+        ;
+
+        
+    
+    
+            var circle_marker_06956ce48cd3a723ef7075d5d7b5aeb5 = L.circleMarker(
+                [24.0683, 120.5385],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_9e83b74fcd6f2de1343ab7c22910d6cf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_246510f15b4436cf904a820883135a71 = $(`<div id="html_246510f15b4436cf904a820883135a71" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>英文專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：彰化</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_9e83b74fcd6f2de1343ab7c22910d6cf.setContent(html_246510f15b4436cf904a820883135a71);
+            
+        
+
+        circle_marker_06956ce48cd3a723ef7075d5d7b5aeb5.bindPopup(popup_9e83b74fcd6f2de1343ab7c22910d6cf)
+        ;
+
+        
+    
+    
+            var circle_marker_5f7956bd7c72ee4e38192ee10523d9fe = L.circleMarker(
+                [23.7027, 120.5424],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_dfc76b8e278ccbf10504c8df720ff353 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8b2d488054d76a3b38bd933f1437a986 = $(`<div id="html_8b2d488054d76a3b38bd933f1437a986" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>英文專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：雲林</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_dfc76b8e278ccbf10504c8df720ff353.setContent(html_8b2d488054d76a3b38bd933f1437a986);
+            
+        
+
+        circle_marker_5f7956bd7c72ee4e38192ee10523d9fe.bindPopup(popup_dfc76b8e278ccbf10504c8df720ff353)
+        ;
+
+        
+    
+    
+            var circle_marker_7a1b3ffba99b6efbb4427673edb5870e = L.circleMarker(
+                [24.6223, 121.2109],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_350915442bd21aa772c96a21fe484666 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_946c6f2ed848be940ffcbf61b2d7ad18 = $(`<div id="html_946c6f2ed848be940ffcbf61b2d7ad18" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>英文專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：尖後</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_350915442bd21aa772c96a21fe484666.setContent(html_946c6f2ed848be940ffcbf61b2d7ad18);
+            
+        
+
+        circle_marker_7a1b3ffba99b6efbb4427673edb5870e.bindPopup(popup_350915442bd21aa772c96a21fe484666)
+        ;
+
+        
+    
+    
+            var circle_marker_59ae785111a714886680f25eaf7f172d = L.circleMarker(
+                [24.7481, 121.7595],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_1c34bb6000b8c3f7e4844163449e1c86 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_119a97dbe1185079c267830c27b449be = $(`<div id="html_119a97dbe1185079c267830c27b449be" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>英文專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：宜蘭</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_1c34bb6000b8c3f7e4844163449e1c86.setContent(html_119a97dbe1185079c267830c27b449be);
+            
+        
+
+        circle_marker_59ae785111a714886680f25eaf7f172d.bindPopup(popup_1c34bb6000b8c3f7e4844163449e1c86)
+        ;
+
+        
+    
+    
+            var circle_marker_9e2e8c3df8c7e422ebcf5849209e595c = L.circleMarker(
+                [22.6661, 120.482],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_fb0d67899f3279335c751cee38888ea4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_35c82f34a05117c1dd1cf864e5ba5144 = $(`<div id="html_35c82f34a05117c1dd1cf864e5ba5144" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>英文專員/專職教師</div>                 <div style="font-size:12px; color:#34495e;">地點：屏東</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_fb0d67899f3279335c751cee38888ea4.setContent(html_35c82f34a05117c1dd1cf864e5ba5144);
+            
+        
+
+        circle_marker_9e2e8c3df8c7e422ebcf5849209e595c.bindPopup(popup_fb0d67899f3279335c751cee38888ea4)
+        ;
+
+        
+    
+    
+            var circle_marker_f875b724f58405cd2e2e7afdfd9f0598 = L.circleMarker(
+                [23.9681, 120.967],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_dc302f7f145c59ea82a821283b0cfa3f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b3294ccb618d21ba0eabf85557cc1a75 = $(`<div id="html_b3294ccb618d21ba0eabf85557cc1a75" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>事務員</div>                 <div style="font-size:12px; color:#34495e;">地點：埔里</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_dc302f7f145c59ea82a821283b0cfa3f.setContent(html_b3294ccb618d21ba0eabf85557cc1a75);
+            
+        
+
+        circle_marker_f875b724f58405cd2e2e7afdfd9f0598.bindPopup(popup_dc302f7f145c59ea82a821283b0cfa3f)
+        ;
+
+        
+    
+    
+            var circle_marker_cf2e08400b7cf42c9fd90934147b74a6 = L.circleMarker(
+                [23.5803, 120.9447],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_69a1101e38c2ecb135af3f49e40fb8c9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4abc1c9f0b287c0c179f38229deae2a = $(`<div id="html_e4abc1c9f0b287c0c179f38229deae2a" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>事務員</div>                 <div style="font-size:12px; color:#34495e;">地點：信義濁水</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_69a1101e38c2ecb135af3f49e40fb8c9.setContent(html_e4abc1c9f0b287c0c179f38229deae2a);
+            
+        
+
+        circle_marker_cf2e08400b7cf42c9fd90934147b74a6.bindPopup(popup_69a1101e38c2ecb135af3f49e40fb8c9)
+        ;
+
+        
+    
+    
+            var circle_marker_c0af85b48ac496a3902a747d90ab0116 = L.circleMarker(
+                [23.4588, 120.4468],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_7460648e28eb5da65477cbaa915fa827 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0152d0666d2f92faefc4c98ab5f94b05 = $(`<div id="html_0152d0666d2f92faefc4c98ab5f94b05" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>事務員</div>                 <div style="font-size:12px; color:#34495e;">地點：嘉義</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_7460648e28eb5da65477cbaa915fa827.setContent(html_0152d0666d2f92faefc4c98ab5f94b05);
+            
+        
+
+        circle_marker_c0af85b48ac496a3902a747d90ab0116.bindPopup(popup_7460648e28eb5da65477cbaa915fa827)
+        ;
+
+        
+    
+    
+            var circle_marker_03489a9bb16f41d48aec51bd29ddde4d = L.circleMarker(
+                [23.9677, 120.9682],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_1e194b03db933abc6fc975e10f1bada0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fcae64ca52ce5f88eeab7ff6f87c8974 = $(`<div id="html_fcae64ca52ce5f88eeab7ff6f87c8974" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>行政管理處</div>                 <div style="font-size:12px; color:#34495e;">地點：行政組-事務員</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_1e194b03db933abc6fc975e10f1bada0.setContent(html_fcae64ca52ce5f88eeab7ff6f87c8974);
+            
+        
+
+        circle_marker_03489a9bb16f41d48aec51bd29ddde4d.bindPopup(popup_1e194b03db933abc6fc975e10f1bada0)
+        ;
+
+        
+    
+    
+            var circle_marker_6897cb82d105590cfe7d96b11a8d4bcb = L.circleMarker(
+                [24.1923, 120.6396],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_e9705c793104dd5997aa67c0a0a32ac8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ec95c94e7f6b3f0723667961085bb155 = $(`<div id="html_ec95c94e7f6b3f0723667961085bb155" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>行政管理處</div>                 <div style="font-size:12px; color:#34495e;">地點：資訊組-專員</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_e9705c793104dd5997aa67c0a0a32ac8.setContent(html_ec95c94e7f6b3f0723667961085bb155);
+            
+        
+
+        circle_marker_6897cb82d105590cfe7d96b11a8d4bcb.bindPopup(popup_e9705c793104dd5997aa67c0a0a32ac8)
+        ;
+
+        
+    
+    
+            var circle_marker_1a359b3a593683bc07b63145fd5f1408 = L.circleMarker(
+                [24.1923, 120.6396],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_e40d942ab06aa2ed24804a67ec8dee54 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_212f11f159470178b122f6cf4c0dfaaf = $(`<div id="html_212f11f159470178b122f6cf4c0dfaaf" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>行政管理處</div>                 <div style="font-size:12px; color:#34495e;">地點：公關組-專案計畫專員</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：2 名</div>             </div>             </div>`)[0];
+                popup_e40d942ab06aa2ed24804a67ec8dee54.setContent(html_212f11f159470178b122f6cf4c0dfaaf);
+            
+        
+
+        circle_marker_1a359b3a593683bc07b63145fd5f1408.bindPopup(popup_e40d942ab06aa2ed24804a67ec8dee54)
+        ;
+
+        
+    
+    
+            var circle_marker_9c423bfc687e4609d9f6eb13cbd5821a = L.circleMarker(
+                [24.1923, 120.6396],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_429cac252aee5fea1e9544a21b3d208e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6fba1450558f37727227380f051da2a2 = $(`<div id="html_6fba1450558f37727227380f051da2a2" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>行政管理處</div>                 <div style="font-size:12px; color:#34495e;">地點：公關組-宣傳行銷專員</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_429cac252aee5fea1e9544a21b3d208e.setContent(html_6fba1450558f37727227380f051da2a2);
+            
+        
+
+        circle_marker_9c423bfc687e4609d9f6eb13cbd5821a.bindPopup(popup_429cac252aee5fea1e9544a21b3d208e)
+        ;
+
+        
+    
+    
+            var circle_marker_31b016062ba1b014c31a78b533db0712 = L.circleMarker(
+                [23.9677, 120.9682],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_303b85f56ac43fc7fc1fa0b27b8ae7cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a4b37ce4594d84e3693ebda3f83d27ad = $(`<div id="html_a4b37ce4594d84e3693ebda3f83d27ad" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>教育輔導處</div>                 <div style="font-size:12px; color:#34495e;">地點：社會工作暨特殊教育發展組-專員</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_303b85f56ac43fc7fc1fa0b27b8ae7cb.setContent(html_a4b37ce4594d84e3693ebda3f83d27ad);
+            
+        
+
+        circle_marker_31b016062ba1b014c31a78b533db0712.bindPopup(popup_303b85f56ac43fc7fc1fa0b27b8ae7cb)
+        ;
+
+        
+    
+    
+            var circle_marker_1eee3af438a499604f68c40b0fd1280c = L.circleMarker(
+                [23.0217, 120.2301],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_b47af495924705d253fa2a7a16fb4112 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b8471a5efb0c0ff1890f01b12724891c = $(`<div id="html_b8471a5efb0c0ff1890f01b12724891c" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>外展處</div>                 <div style="font-size:12px; color:#34495e;">地點：中區-數學專員</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_b47af495924705d253fa2a7a16fb4112.setContent(html_b8471a5efb0c0ff1890f01b12724891c);
+            
+        
+
+        circle_marker_1eee3af438a499604f68c40b0fd1280c.bindPopup(popup_b47af495924705d253fa2a7a16fb4112)
+        ;
+
+        
+    
+    
+            var circle_marker_a5e1ff67ffd7cc25acce9e63a538b8d7 = L.circleMarker(
+                [24.7219, 121.0867],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_98b1c510184d65beff8c599d7deee832 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d3905000b464383d2a64102c5d622f75 = $(`<div id="html_d3905000b464383d2a64102c5d622f75" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>外展處</div>                 <div style="font-size:12px; color:#34495e;">地點：北區-英文專員</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_98b1c510184d65beff8c599d7deee832.setContent(html_d3905000b464383d2a64102c5d622f75);
+            
+        
+
+        circle_marker_a5e1ff67ffd7cc25acce9e63a538b8d7.bindPopup(popup_98b1c510184d65beff8c599d7deee832)
+        ;
+
+        
+    
+    
+            var circle_marker_14d2cceb4ca1832984ab79a344bcd84c = L.circleMarker(
+                [22.545, 120.4826],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_18f42167b6a8ffe675048742cc3cbba7);
+        
+    
+        var popup_02ee5efcea855486195e3b5937821908 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5e2d839c1e767ae50d81d503211a80ac = $(`<div id="html_5e2d839c1e767ae50d81d503211a80ac" style="width: 100.0%; height: 100.0%;">             <div style="                 font-family: Arial, sans-serif;                  font-size: 14px;                  font-weight: bold;                  color: #2c3e50;                 background-color: #ecf0f1;                 padding: 8px 12px;                 border-radius: 8px;                 box-shadow: 2px 2px 6px rgba(0,0,0,0.3);             ">                 <div>外展處</div>                 <div style="font-size:12px; color:#34495e;">地點：南區-數學專員</div>                 <div style="color:#e74c3c; margin-top:6px;">名額：1 名</div>             </div>             </div>`)[0];
+                popup_02ee5efcea855486195e3b5937821908.setContent(html_5e2d839c1e767ae50d81d503211a80ac);
+            
+        
+
+        circle_marker_14d2cceb4ca1832984ab79a344bcd84c.bindPopup(popup_02ee5efcea855486195e3b5937821908)
+        ;
+
+        
+    
+</script>
+</html>
