@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>招募地點地圖</title>
+
+  <!-- Leaflet 地圖 CSS & JS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+e2/jkPwFndPqfTfuFsyrjFr2yXHk5dqNiWVTmY1Q="
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1jzJjKzA+8YGytY7PRyV8oUlvEc8YvnlFqQo2E2U="
+    crossorigin=""
+  ></script>
+
+  <!-- PyScript 套件 -->
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+  <style>
+    #map {
+      height: 600px;
+      margin-top: 1em;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h2>📍 招募地點互動地圖</h2>
+<div id="map"></div>
+
+<!-- PyScript 程式碼 -->
+<py-script>
+from js import L, document
+
+# 招募地點：地名 -> [緯度, 經度, 名額]
+locations = {
+    "竹東": [24.7405, 121.0870, 1],
+    "沙鹿": [24.2332, 120.5646, 1],
+    "國姓": [23.9802, 120.8491, 2],
+    "信義濁水": [23.5803, 120.9447, 1],
+    "基隆": [25.1272, 121.7395, 1],
+    "彰化": [24.0683, 120.5385, 1],
+    "雲林": [23.7027, 120.5424, 1],
+    "尖後": [22.3647, 120.5550, 1],  # 假設
+    "宜蘭": [24.7481, 121.7595, 1],
+    "屏東": [22.6661, 120.4820, 2]
+}
+
+# 初始化 Leaflet 地圖
+mymap = L.map("map").setView([23.7, 121.0], 8)
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    "attribution": "© OpenStreetMap 貢獻者"
+}).addTo(mymap)
+
+# 加入招募地點標記
+for name, (lat, lon, count) in locations.items():
+    L.circleMarker(
+        [lat, lon],
+        {
+            "radius": 5 + count * 2,
+            "color": "blue",
+            "fillColor": "blue",
+            "fillOpacity": 0.6
+        }
+    ).bindPopup(f"{name}<br>名額：{count} 名").addTo(mymap)
+</py-script>
+
+</body>
+</html>
